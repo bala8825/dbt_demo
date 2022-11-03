@@ -1,0 +1,13 @@
+with
+dbttrans1 as (select * from cloudside-academy.dbtdemo.dbtdemo12
+),
+
+bqviewsql as (
+select 
+      id as student_id,
+      name as Name,
+      email as student_email_id,
+      place as Location
+from dbttrans1
+)
+select * from bqviewsql
