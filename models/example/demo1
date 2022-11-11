@@ -1,5 +1,5 @@
 with
-{{config(materialized='ephemeral')}}
+{{config(materialized='view')}}
 
 dbttrans1 as (select * from cloudside-academy.dbtdemo.dbtdemo12
 ),
